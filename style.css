@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+a {
+    color: black;
+}
+
 /* WHOLE PAGE DIV */
 #page-container {
     position: relative;
@@ -150,11 +154,17 @@ audio {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 1.5vh;
+    transition: 0.3s;
+}
+
+#seemywork-btn:hover {
+    transform: translateY(-2px) translateX(-2px);
+    box-shadow: 4px 6px rgb(238, 175, 39);
 }
 
 #seemywork-btn:active {
-    transform: translateY(2px) translateX(2px);
-    box-shadow: 0px 2px rgb(238, 175, 39);
+    transform: translateY(4px) translateX(4px);
+    box-shadow: 1.5px 3px rgb(238, 175, 39);
 }
 
 #seemywork-arrow {
@@ -239,7 +249,7 @@ audio {
 }
 
 #p-box p {
-    padding: 0.5vh 2vh 0vh 2vh;
+    padding: 1vh 2vh 0vh 2vh;
     font-family: 'Work Sans', sans-serif;
     font-size: 0.95rem;
     text-align: justify;
@@ -255,8 +265,8 @@ audio {
     background-color: #a5d4f7;
     border: none;
     border-radius: 7px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 0.75rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
     font-weight: 500;
     padding: 0.5vh 0.75vh;
     margin: 0vh 0.7vh 0vh 0vh;
@@ -265,11 +275,17 @@ audio {
 #p-box-links {
     position: absolute;
     bottom: 2.5vh;
-    left: 8.5vh;
+    width: 100%;
 }
 
+#p-box-links2 {
+    display: flex;
+    justify-content: center;
+}
+
+
 #p-box-link-btn, #comingsoon-button {
-    margin: 0vh 0.7vh 0vh 0vh;
+    margin: 0vh 1.25vh 0vh 1.25vh;
     background-color: rgb(246, 194, 82);
     border: none;
     border-radius: 3px;
