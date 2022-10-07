@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-a {
+a, button {
     color: black;
 }
 
