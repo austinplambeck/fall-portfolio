@@ -580,7 +580,7 @@ footer li a:hover {
         font-family: 'Fraunces', serif;
         font-weight: 400;
         transition: 0.25s;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
     
     .mobile-logo:hover {
@@ -620,27 +620,8 @@ footer li a:hover {
         min-width: 350px; /* ON MOBILE -- INCREASE MIN-WIDTH (?) */
     }
 
-    .tooltip .tooltiptext3 {
-        visibility: hidden;
-        background-color: #8dd1fe;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 0.25rem 0.5rem;
-        position: absolute;
-        z-index: 1;
-        top: 110%;
-        left: 125%;
-        margin-left: -60px;
-    }
-    
-    .tooltip:active .tooltiptext, .tooltip:active .tooltiptext2, .tooltip:active .tooltiptext3 {
-        visibility: visible;
-        font-family: 'Work Sans', sans-serif;
-        -webkit-text-stroke: 0px white;
-        -webkit-text-fill-color: black;
-        font-size: 1rem;
-        font-weight: 500;
+    .tooltip:hover .tooltiptext, .tooltip:hover .tooltiptext2, .tooltip:hover .tooltiptext3 {
+        visibility:hidden;
     }
 
     #projectboxes-flex {
