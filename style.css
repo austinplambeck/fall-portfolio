@@ -558,6 +558,12 @@ footer li a:hover {
     header {
         font-size: 0.8rem;
     }
+
+    header ul {
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
     
     .header-format {
         display: grid;
@@ -585,8 +591,7 @@ footer li a:hover {
     #volume-button {
         font-size: 0.8rem;
     }
-    
-
+  
     .hero-intro {
         font-family: 'Fraunces', sans-serif;
         height: 90vh;
@@ -596,17 +601,17 @@ footer li a:hover {
     }
     
     .hero-intro h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-style: italic;
         font-weight: 500;
     }
     
     .hero-intro h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     #hollow-text, #hollow-text2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         -webkit-text-stroke: 0.075rem black;
         -webkit-text-fill-color: #70c0f6;
     }
@@ -629,4 +634,17 @@ footer li a:hover {
         margin-left: -60px;
     }
     
+    .tooltip:active .tooltiptext, .tooltip:active .tooltiptext2, .tooltip:active .tooltiptext3 {
+        visibility: visible;
+        font-family: 'Work Sans', sans-serif;
+        -webkit-text-stroke: 0px white;
+        -webkit-text-fill-color: black;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #projectboxes-flex {
+        margin-bottom: 2rem;
+    }
+
 }
