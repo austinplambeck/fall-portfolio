@@ -26,10 +26,16 @@
                 <div class="header-logo">
                     <a href="#" id="logo"><h3>plambo.world <i class="fa-solid fa-earth-asia"></i></h3></a>
                 </div>
+                <div class="mobile-logo">
+                    <i class="fa-solid fa-earth-asia"></i>
+                </div>
                 <ul>
-                    <a href="#" id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
+                    <div class="tooltip">
+                        <a href="#" id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
+                        <span class="tooltiptext3">Toggle sound</span>
+                    </div>
                     <a href="#projects-section" id="header-button"><li>Projects</li></a>
-                    <a href="#" id="header-button"><li>About</li></a>
+                    <a href="#about-section" id="header-button"><li>About</li></a>
                     <a href="#" id="header-button"><li>Resume</li></a>
                     <a href="#" id="header-button"><li>Writing</li></a>
                     <a href="#" id="header-button"><li>Now</li></a>
@@ -41,18 +47,27 @@
             <div>
                 <h4>Hi, I'm Austin Plambeck.</h4>
                 <h1>
-                    I'm a <span id="hollow-text" title="I am open to work. Hire me!">front-end developer</span>,
-                    <br>& a sci-fi/fantasy <span onclick="toggleMusic()" id="hollow-text2" title="Click this! 🎜">writer</span>.
+                    I'm a 
+                    <div class="tooltip" id="hollow-text" title="I am open to work. Hire me!">
+                        front-end developer
+                        <span class="tooltiptext">I am open to work. Hire me!</span>
+                    </div>,
+                    <br>
+                    & a sci-fi/fantasy 
+                    <div class="tooltip" onclick="toggleMusic()" id="hollow-text2" title="Click this! 🎜">
+                        writer
+                        <span class="tooltiptext2">Click this! 🎜</span>
+                    </div>
+                    .
                 </h1>
             </div>
         </section>
-        <div class="explore-work">
-            <a href="#projects-section"><button id="seemywork-btn">Explore my work!</button></a>
-            <a href="#projects-section"><button id="seemywork-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></button></a>
+        <div class="explore-more">
+            <a href="#projects-section"><button id="seemore-btn">Explore my work</button></a>
+            <a href="#projects-section"><button id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></button></a>
         </div>
-        <!-- onclick="smoothScroll(document.getElementById('projects-section'))" -->
         <section id="projects-section">
-            <h1 id="projects-title">Projects</h1>
+            <h1 id="section-title">Projects</h1>
             <div id="projectboxes-flex">
                 <div id="p-box">
                     <img src="./media/ofthesky.png">
@@ -147,6 +162,71 @@
                 <!-- <div id="p-box">
                     <img id="inprogress" src="./media/greenspace.jpg">
                 </div> -->
+            </div>
+        </section>
+        <div class="explore-more">
+            <a href="#about-section"><button id="seemore-btn">Learn more about me</button></a>
+            <a href="#about-section"><button id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></button></a>
+        </div>
+        <section id="about-section">
+            <h1 id="section-title">About</h1>
+            <div id="about-flex">
+                <div id="me">
+                    <h3 id="about-title">Me</h3>
+                    <p>
+                        H
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Phasellus accumsan tristique tincidunt. Nunc quis convallis mi. 
+                        Suspendisse lobortis fermentum molestie. Mauris posuere eros 
+                        ipsum, id gravida quam volutpat vel. Quisque fringilla finibus 
+                        dui non pharetra. Maecenas quis metus faucibus, tempor ante vel, 
+                        fringilla tortor. Aliquam ultricies mattis porta. Etiam placerat
+                        elit eget odio maximus, sit amet dignissim sem consequat. 
+                        Donec et cursus sapien.
+                    </p>
+                </div>
+                <div id="skills">
+                    <h3 id="about-title">Skills</h3>
+                    <p id="skill-intro-p">The tools & tech I use to bring ideas to life:</p>
+                    <div id="skills-icons-flex">
+                        <div id="skill-icon-caps">
+                            <i class="fa-brands fa-html5"></i>
+                            <p id="skill-name">HTML</p>
+                        </div>
+                        <div id="skill-icon-caps">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p id="skill-name">CSS</p>
+                        </div>
+                        <div id="skill-icon-caps">
+                            <i class="fa-brands fa-js"></i>
+                            <p id="skill-name">JavaScript</p>
+                        </div>
+                        <div id="skill-icon-caps">
+                            <i class="fa-brands fa-react"></i>
+                            <p id="skill-name">React</p>
+                        </div>
+                        <div id="skill-icon-caps">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <p id="skill-name">Responsive<br>Websites</p>
+                        </div>
+                        <div id="skill-icon-caps">
+                            <i class="fa-brands fa-github"></i>
+                            <p id="skill-name">GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="interests">
+                    <h3 id="about-title">Interests</h3>
+                    <ul>
+                        <li>coding</li>
+                        <li>web design</li>
+                        <li>creative writing (<a href="https://www.goodreads.com/book/show/61870450-tomorrow-s-storm" target="_blank">check out my novel</a>)</li>
+                        <li>reading</li>
+                        <li>sci-fi/fantasy</li>
+                        <li>film (<a href="https://letterboxd.com/plamboren/" target="_blank">here's my letterboxd</a>)</li>
+                        <li>rain, storms, the PNW</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <footer>
