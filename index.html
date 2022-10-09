@@ -34,10 +34,13 @@
                         <a href="#" id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
                         <span class="tooltiptext3">Toggle sound</span>
                     </div>
+                    <div class="tooltip">
+                        <a href="#" id="light-mode-icon" onclick="darkToggle()"><i class="fa-regular fa-sun"></i></a>
+                        <span class="tooltiptext4">Change theme</span>
+                    </div>
                     <a href="#projects-section" id="header-button"><li>Projects</li></a>
                     <a href="#about-section" id="header-button"><li>About</li></a>
                     <a href="#" id="header-button"><li>Resume</li></a>
-                    <a href="#" id="header-button"><li>Writing</li></a>
                     <a href="#" id="header-button"><li>Now</li></a>
                 </ul>
             </div>
@@ -48,13 +51,13 @@
                 <h4>Hi, I'm Austin Plambeck.</h4>
                 <h1>
                     I'm a 
-                    <div class="tooltip" id="hollow-text" title="I am open to work. Hire me!">
+                    <div class="tooltip" id="hollow-text">
                         front-end developer
                         <span class="tooltiptext">I am open to work. Hire me!</span>
                     </div>,
                     <br>
                     & a sci-fi/fantasy 
-                    <div class="tooltip" onclick="toggleMusic()" id="hollow-text2" title="Click this! 🎜">
+                    <div class="tooltip" onclick="toggleMusic()" id="hollow-text2">
                         writer
                         <span class="tooltiptext2">Click this! 🎵</span>
                     </div>
@@ -64,7 +67,7 @@
         </section>
         <div class="explore-more">
             <a href="#projects-section"><button id="seemore-btn">Explore my work</button></a>
-            <a href="#projects-section"><button id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></button></a>
+            <a href="#projects-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
         <section id="projects-section">
             <h1 id="section-title">Projects</h1>
@@ -166,7 +169,7 @@
         </section>
         <div class="explore-more">
             <a href="#about-section"><button id="seemore-btn">Learn more about me</button></a>
-            <a href="#about-section"><button id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></button></a>
+            <a href="#about-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
         <section id="about-section">
             <h1 id="section-title">About</h1>
@@ -174,16 +177,19 @@
                 <div id="me">
                     <h3 id="about-title">Me</h3>
                     <p>
-                        H
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Phasellus accumsan tristique tincidunt. Nunc quis convallis mi. 
-                        Suspendisse lobortis fermentum molestie. Mauris posuere eros 
-                        ipsum, id gravida quam volutpat vel. Quisque fringilla finibus 
-                        dui non pharetra. Maecenas quis metus faucibus, tempor ante vel, 
-                        fringilla tortor. Aliquam ultricies mattis porta. Etiam placerat
-                        elit eget odio maximus, sit amet dignissim sem consequat. 
-                        Donec et cursus sapien.
+                        Hello! My name is Austin Plambeck, and I’m a front-end developer 
+                        and sci-fi / fantasy writer. As a developer, my aim is to build 
+                        useful projects and apps that are well-designed (aesthetically 
+                        & functionally) and contain clean code. My goal is to find work at 
+                        a company where I can utilize my skillset and learn more every day. As a writer, I look 
+                        to create deeply flawed characters and messy plotlines with an 
+                        overarching hopeful message. My debut fantasy novel 
+                       TOMORROW’S STORM is <a id="me-link" href="https://toscreative.com/tomorrows-storm" target="_blank">available now</a>!
                     </p>
+                    <div id="me-buttons">
+                        <a href="mailto:austinplambeck@gmail.com"><button>Get in touch with me 📫</button></a>
+                        <a href="#"><button>View my resume 📑</button></a>
+                    </div>
                 </div>
                 <div id="skills">
                     <h3 id="about-title">Skills</h3>
@@ -220,15 +226,24 @@
                     <ul>
                         <li>coding</li>
                         <li>web design</li>
-                        <li>creative writing (<a href="https://www.goodreads.com/book/show/61870450-tomorrow-s-storm" target="_blank">check out my novel</a>)</li>
+                        <li>creative writing 
+                            (<a href="https://www.goodreads.com/book/show/61870450-tomorrow-s-storm" target="_blank">check out my novel</a>)
+                        </li>
                         <li>reading</li>
                         <li>sci-fi/fantasy</li>
                         <li>film (<a href="https://letterboxd.com/plamboren/" target="_blank">here's my letterboxd</a>)</li>
                         <li>rain, storms, the PNW</li>
+                        <li>Simone</li>
                     </ul>
                 </div>
             </div>
         </section>
+        <div class="explore-more">
+            <a href="#now-section"><button id="seemore-btn">See what I'm doing now</button></a>
+            <a href="now-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+        </div>
+        <section id="now-section"></section>
+
         <footer>
             <h5><i class="fa-regular fa-copyright"></i> Austin Plambeck 2022</h5>
             <ul>
