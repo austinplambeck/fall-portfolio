@@ -5,8 +5,48 @@
     scroll-behavior: smooth;
 }
 
+/* COLOR THEMES*/
+:root {
+    --title: #1495ea;
+    --title-hover: rgb(245, 206, 121);
+    --title-edge-hover: rgb(238, 173, 32);
+    --btn-color: #8dd1fe;
+    --dark-link-color: #63aee1;
+    --comingsoon: #63aee1;
+    --yellow-accent: rgb(246, 194, 82);
+    --gray-accent: rgb(121, 121, 121);
+    --light-font: rgb(84, 84, 84);
+    --pbox-border: black;
+    --up-arrow: rgb(121, 121, 121);
+
+    --background: white;
+    --secondary-background: white;
+    --text: black;
+    --button-text: black;
+}
+
+.darkmode {
+    --title: #1495ea;
+    --title-hover: rgb(245, 206, 121);
+    --title-edge-hover: rgb(238, 173, 32);
+    --btn-color: #8dd1fe;
+    --dark-link-color: #8dd1fe;
+    --comingsoon: #8dd1fe;
+    --yellow-accent: rgb(246, 194, 82);
+    --gray-accent: #63aee1;
+    --light-font: white;
+    --pbox-border: white;
+    --up-arrow: #8dd1fe;
+
+    --background: rgb(9, 9, 9);
+    --secondary-background: rgb(0, 0, 0);
+    --text: white;
+    --button-text: black;
+}
+/* COLOR THEMES*/
+
 a, button {
-    color: black;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -14,10 +54,13 @@ a, button {
 #page-container {
     position: relative;
     min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 #content-wrap {
     padding-bottom: 12vh;
+    background-color: var(--background);
 }
 
 audio {
@@ -56,12 +99,11 @@ header {
     text-decoration: none;
     font-family: 'Fraunces', serif;
     font-weight: 400;
-    transition: 0.25s;
+    transition: 0.3s;
 }
 
 #logo:hover {
-    text-shadow: 1.5px 2.5px rgb(206, 206, 206);
-    transition: 0.25s;
+    color: var(--dark-link-color);
 }
 
 header ul {
@@ -73,7 +115,8 @@ header ul {
 #volume-button {
     display: none;
     font-size: 1.3rem;
-    padding: 0.1rem 0.5rem 0rem 0.5rem;
+    padding: 0.2rem 0.5rem 0rem 0.5rem;
+    margin-right: 1rem;
 }
 
 #volume-button:hover {
@@ -81,10 +124,10 @@ header ul {
     transition: 0.25s;
 }
 
-#light-mode-icon {
-    margin: 0 0.5rem -0.2rem 0.5rem;
+#dark-mode-toggle {
     font-size: 1.5rem;
-    padding: 0.3rem 0.5rem 0rem 0.5rem;
+    padding: 0.2rem 0.5rem 0rem 0.5rem;
+    margin-right: 0.5rem;
 }
 
 #header-button {
@@ -113,7 +156,6 @@ header ul {
 
 .hero-intro h4 {
     font-size: 1.9rem;
-    font-style: italic;
     font-weight: 500;
 }
 
@@ -123,12 +165,13 @@ header ul {
 
 #hollow-text, #hollow-text2 {
     font-size: 3rem;
-    -webkit-text-stroke: 0.075rem black;
-    -webkit-text-fill-color: #70c0f6;
+    -webkit-text-stroke: 0.075rem var(--title);
+    -webkit-text-fill-color: #8dd1fe;
+    border-bottom: 1px dotted #63aee1;
 }
 
 #hollow-text:hover, #hollow-text2:hover {
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.1rem var(--title-edge-hover);
     -webkit-text-fill-color: rgb(245, 206, 121);
     cursor: pointer;
 }
@@ -137,13 +180,11 @@ header ul {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #3da1e3;
 }
   
 .tooltip .tooltiptext {
     visibility: hidden;
     background-color: #8dd1fe;
-    color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
@@ -156,7 +197,6 @@ header ul {
 .tooltip .tooltiptext2 {
     visibility: hidden;
     background-color: #8dd1fe;
-    color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
@@ -170,7 +210,6 @@ header ul {
 .tooltip .tooltiptext3 {
     visibility: hidden;
     background-color: #8dd1fe;
-    color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
@@ -184,7 +223,6 @@ header ul {
 .tooltip .tooltiptext4 {
     visibility: hidden;
     background-color: #8dd1fe;
-    color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
@@ -242,31 +280,32 @@ header ul {
     font-size: 1.2rem;
     background-color: #8dd1fe;
     border: none;
-    box-shadow: 2px 4px rgb(238, 175, 39);
+    box-shadow: 2px 4px rgb(246, 194, 82);
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 1.5vh;
     transition: 0.3s;
+    color: var(--button-text);
 }
 
 #seemore-btn:hover {
     transform: translateY(-2px) translateX(-2px);
-    box-shadow: 4px 6px rgb(238, 175, 39);
+    box-shadow: 4px 6px rgb(246, 194, 82);
 }
 
 #seemore-btn:active {
     transform: translateY(4px) translateX(4px);
-    box-shadow: 1.5px 3px rgb(238, 175, 39);
+    box-shadow: 1.5px 3px rgb(246, 194, 82);
 }
 
 #seemore-arrow {
+    width: 3rem;
     display: block;
     margin: 0 auto;
     font-size: 2rem;
     border: none;
     padding: 0.25rem 0.5rem;
-    background-color: white;
     color:rgb(246, 194, 82);
     cursor: pointer;
     transition: 0.3s;
@@ -274,7 +313,7 @@ header ul {
 }
 
 #seemore-arrow:hover {
-    color: #a5d4f7;
+    color: #8dd1fe;
 }
 
 
@@ -299,18 +338,19 @@ header ul {
 #p-box {
     position: relative;
     margin: 3vw 1vw;
-    border: 3px solid black;
+    border: 3px solid var(--pbox-border);
     border-radius: 12px;
-    box-shadow: 4px 8px rgb(112, 112, 112);
+    box-shadow: 4px 8px var(--gray-accent);
     transition: 0.5s;
     height: 32rem;
-    width: 21%;
-    min-width: 315px; /* ON MOBILE -- INCREASE MIN-WIDTH (?) */
+    width: 21rem;
+    min-width: 315px;
+    background-color: var(--secondary-background);
 }
 
 #p-box:hover {
     transform: translateX(-3px) translateY(-6px);
-    box-shadow: 7px 14px rgb(112, 112, 112);
+    box-shadow: 7px 14px var(--gray-accent);
 }
 
 #p-box img {
@@ -335,7 +375,7 @@ header ul {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     font-style: italic;
-    color: #76b3e2;
+    color: var(--comingsoon);
     font-size: 1rem;
     padding: 0.5vh 2vh 0vh 2vh;
 }
@@ -358,7 +398,7 @@ header ul {
 }
 
 #p-box-buttons button {
-    background-color: #a5d4f7;
+    background-color: #8dd1fe;
     border: none;
     border-radius: 7px;
     font-family: 'Ubuntu', sans-serif;
@@ -366,6 +406,7 @@ header ul {
     font-weight: 500;
     padding: 0.5vh 0.75vh;
     margin: 0vh 0.7vh 0vh 0vh;
+    color: var(--button-text);
 }
 
 #p-box-links {
@@ -390,10 +431,11 @@ header ul {
     font-weight: 500;
     padding: 0.5vh 1vh;
     transition: 0.3s;
+    color: var(--button-text);
 }
 
 #p-box-link-btn:hover {
-    background-color: #a5d4f7;
+    background-color: #8dd1fe;
     cursor: pointer;
 }
 
@@ -406,7 +448,7 @@ header ul {
 #about-flex {
     display: block;
     margin: 0 auto;
-    min-width: 350px;
+    min-width: 450px;
     width: 45%;
 }
 
@@ -416,7 +458,7 @@ header ul {
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 0.5rem;
-    color:#63aee1;
+    color:var(--dark-link-color);
 }
 
 #me, #skills {
@@ -441,13 +483,13 @@ header ul {
 
 #me-link {
     text-decoration: none;
-    border-bottom: 2px dotted #76b3e2;
+    border-bottom: 2px dotted #63aee1;
     padding: 0rem 0.1rem;
     transition: 0.3s;
 }
 
 #me-link:hover {
-    color:#4998cd;
+    color:#63aee1;
 }
 
 #me-buttons {
@@ -457,7 +499,7 @@ header ul {
 }
 
 #me-buttons button {
-    background-color: #a5d4f7;
+    background-color: #8dd1fe;
     border: none;
     border-radius: 7px;
     font-family: 'Ubuntu', sans-serif;
@@ -465,19 +507,20 @@ header ul {
     font-weight: 500;
     padding: 0.25rem 0.5rem;
     margin: 0rem 1rem;
-    box-shadow: 2px 4px gray;
+    box-shadow: 2px 4px var(--gray-accent);
     transition: 0.2s;
     cursor: pointer;
+    color: var(--button-text);
 }
 
 #me-buttons button:hover {
     transform: translateX(-2px) translateY(-2px);
-    box-shadow: 4px 6px gray;
+    box-shadow: 4px 6px var(--gray-accent);
 }
 
 #me-buttons button:active {
     transform: translateX(2px) translateY(2px);
-    box-shadow: 0px 2px gray;
+    box-shadow: 0px 2px var(--gray-accent);
 }
 
 #skills-icons-flex {
@@ -489,16 +532,15 @@ header ul {
 
 #skill-intro-p {
     font-size: 1rem;
-    color: rgb(84, 84, 84);
+    color: var(--light-font);
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 0.85rem;
     text-align: left;
-    /* font-style: italic; */
 }
 
 #skill-icon-caps p {
     font-size: 0.9rem;
-    color: rgb(84, 84, 84);
+    color: var(--light-font);
 }
 
 #skill-icon-caps {
@@ -523,7 +565,7 @@ header ul {
 }
 
 .fa-js {
-    color:rgb(238, 175, 39);
+    color:rgb(246, 194, 82);
 }
 
 .fa-react {
@@ -550,13 +592,13 @@ header ul {
 
 #interests a {
     text-decoration: none;
-    border-bottom: 2px dotted #76b3e2;
+    border-bottom: 2px dotted #63aee1;
     padding: 0rem 0.1rem;
     transition: 0.3s;
 }
 
 #interests a:hover {
-    color:#4998cd;
+    color:#63aee1;
 }
 
 
@@ -587,13 +629,13 @@ footer li a {
 }
 
 footer li a:hover {
-    color: #63aee1;
+    color: #8dd1fe;
 }
 
 #up-arrow {
     font-size: 2rem;
     position: absolute;
-    color: rgb(112, 112, 112);
+    color: var(--up-arrow);
     bottom: 0vh;
     height: 10vh;
     right: 7vh;
@@ -602,25 +644,11 @@ footer li a:hover {
 }
 
 #up-arrow:hover {
-    color: #63aee1;
+    color: var(--yellow-accent);
 }
-
-
-/* DARK MODE */
-.dark {
-    background-color: black;
-    color: white;
-}
-
-
-
-/* DARK MODE */
 
 
 @media only screen and (max-width: 750px) {
-    header {
-        font-size: 0.8rem;
-    }
 
     header ul {
         font-size: 1rem;
@@ -630,7 +658,7 @@ footer li a:hover {
     
     .header-format {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 12fr;
     }
     
     .header-logo {
@@ -643,6 +671,7 @@ footer li a:hover {
         font-weight: 400;
         transition: 0.25s;
         font-size: 1.6rem;
+        margin-top: -0.2rem;
     }
     
     .mobile-logo:hover {
@@ -650,8 +679,15 @@ footer li a:hover {
         transition: 0.25s;
     }
       
-    #volume-button, #light-mode-icon {
-        font-size: 1rem;
+    #volume-button {
+        font-size: 1.1rem;
+        padding: 0.2rem 0.5rem 0rem 0.5rem;
+        margin-right: 0.3rem;
+    }
+
+    #dark-mode-toggle {
+        font-size: 1.2rem;
+        margin-right: 0.1rem;
     }
   
     .hero-intro {
@@ -664,18 +700,15 @@ footer li a:hover {
     
     .hero-intro h4 {
         font-size: 1.3rem;
-        font-style: italic;
         font-weight: 500;
     }
     
     .hero-intro h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     #hollow-text, #hollow-text2 {
-        font-size: 1.8rem;
-        -webkit-text-stroke: 0.075rem black;
-        -webkit-text-fill-color: #70c0f6;
+        font-size: 1.7rem;
     }
 
     #p-box {
@@ -689,6 +722,10 @@ footer li a:hover {
 
     #projectboxes-flex {
         margin-bottom: 2rem;
+    }
+
+    #about-flex {
+        min-width: 350px;
     }
 
     #me {
