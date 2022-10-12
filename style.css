@@ -844,4 +844,8 @@ footer li a:hover {
         margin: 0rem 0.5rem;
     }
 
+    #now {
+        min-width: 350px;
+    }
+
 }
