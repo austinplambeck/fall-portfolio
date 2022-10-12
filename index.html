@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fraunces:ital,wght@0,200;0,400;0,700;1,200;1,400;1,500;1,700&family=Hi+Melody&family=Itim&family=Mukta:wght@400;600&family=Nanum+Gothic+Coding:wght@400;700&family=Neucha&family=Ubuntu&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,400;0,9..144,700;1,9..144,200;1,9..144,400;1,9..144,500;1,9..144,700&family=Hi+Melody&family=Itim&family=Mukta:wght@400;600&family=Nanum+Gothic+Coding:wght@400;700&family=Neucha&family=Ubuntu&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="page-container">
@@ -31,16 +31,16 @@
                 </div>
                 <ul>
                     <div class="tooltip">
-                        <a href="#" id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
+                        <a id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
                         <span class="tooltiptext3">Toggle sound</span>
                     </div>
                     <div class="tooltip" id="dark-light-switch">
                         <i class="fa-regular fa-sun" id="dark-mode-toggle" onclick="switchMode()"></i>
                         <span class="tooltiptext4">Change theme</span>
                     </div>
-                    <a href="#projects-section" id="header-button"><li>Projects</li></a>
-                    <a href="#about-section" id="header-button"><li>About</li></a>
-                    <a href="#now-section" id="header-button"><li>Now</li></a>
+                    <a href="#projects" id="header-button"><li>Projects</li></a>
+                    <a href="#about" id="header-button"><li>About</li></a>
+                    <a href="#now" id="header-button"><li>Now</li></a>
                     <a href="./media/AustinPlambeck_DevResume.pdf" id="header-button" target="_blank"><li>Resume</li></a>
                 </ul>
             </div>
@@ -66,34 +66,13 @@
             </div>
         </section>
         <div class="explore-more">
-            <a href="#projects-section"><button id="seemore-btn">Explore my work</button></a>
-            <a href="#projects-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            <a href="#projects"><button id="seemore-btn">Explore my work</button></a>
+            <a href="#projects" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
-        <section id="projects-section">
+        <section id="projects">
             <h1 id="section-title">Projects</h1>
             <div id="projectboxes-flex">
-                <div id="p-box">
-                    <img src="./media/ofthesky.png">
-                    <h5>Of the Sky: The Game</h5>
-                    <div id="p-box-buttons">
-                        <button>JavaScript</button>
-                        <button>CSS</button>
-                        <button>HTML</button>
-                    </div>
-                    <p>
-                        A choice-based text game that utilizes JavaScript objects, enabling the 
-                        player to make choices and traverse through the game. 
-                        The game branches into various subplots, ultimately 
-                        leading to two different endings. It features a main menu, an exit menu pop-up, and 
-                        toggleable music.
-                    </p>
-                    <div id="p-box-links">
-                        <div id="p-box-links2">
-                            <a href="#"><button id="p-box-link-btn">Live link ></button></a>
-                            <a href="#"><button id="p-box-link-btn">GitHub ></button></a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div id="p-box">
                     <img src="./media/todolist.png">
                     <h5>To-do List App</h5>
@@ -111,8 +90,8 @@
                     </p>
                     <div id="p-box-links">
                         <div id="p-box-links2">
-                            <a href="#"><button id="p-box-link-btn">Live link ></button></a>
-                            <a href="#"><button id="p-box-link-btn">GitHub ></button></a>
+                            <a href="https://aplambeck-js-todolist.netlify.app/" target="_blank"><button id="p-box-link-btn">Live link ></button></a>
+                            <a href="https://github.com/austinplambeck/VanillaJS-to-do-list-app" target="_blank"><button id="p-box-link-btn">GitHub ></button></a>
                         </div>
                     </div>
                 </div>
@@ -126,15 +105,38 @@
                         <button>HTML</button>
                     </div>
                     <p>
-                        A random film generator I built for the "Mixed Messages" Project on Codecademy. 
+                        A random film generator I built for the Front-end Career Path on Codecademy. 
                         Initially only run in Node.js, I expanded the project and made a web app out of it, 
                         adding two different settings for generating films: sort by genre and by all. 
                         Currently building Version 2.0 (utilizing the IMDb API).
                     </p>
                     <div id="p-box-links">
                         <div id="p-box-links2">
-                            <a href="#"><button id="p-box-link-btn">Live link ></button></a>
-                            <a href="#"><button id="p-box-link-btn">GitHub ></button></a>
+                            <a href="https://filmgenerator.netlify.app/" target="_blank"><button id="p-box-link-btn">Live link ></button></a>
+                            <a href="https://github.com/austinplambeck/Mixed-Messages-Project" target="_blank"><button id="p-box-link-btn">GitHub ></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="p-box">
+                    <img src="./media/ofthesky.png">
+                    <h5>Of the Sky: The Game</h5>
+                    <h6 id="comingsoon-text">IN PROGRESS</h6>
+                    <!-- <div id="p-box-buttons">
+                        <button>JavaScript</button>
+                        <button>CSS</button>
+                        <button>HTML</button>
+                    </div> -->
+                    <p>
+                        A choice-based text game that utilizes JavaScript objects, enabling the 
+                        player to make choices and traverse through the game. 
+                        The game branches into various subplots, ultimately 
+                        leading to two different endings. It features a main menu, an exit menu pop-up, and 
+                        toggleable music.
+                    </p>
+                    <div id="p-box-links">
+                        <div id="p-box-links2">
+                            <a href="https://oftheskygame.netlify.app/" target="_blank"><button id="p-box-link-btn">Live link ></button></a>
+                            <a href="https://github.com/austinplambeck/Of-the-Sky-Game" target="_blank"><button id="p-box-link-btn">GitHub ></button></a>
                         </div>
                     </div>
                 </div>
@@ -168,11 +170,20 @@
             </div>
         </section>
         <div class="explore-more">
-            <a href="#about-section"><button id="seemore-btn">Learn more about me</button></a>
-            <a href="#about-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            <a href="#about"><button id="seemore-btn">Learn more about me</button></a>
+            <a href="#about" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
-        <section id="about-section">
+        <section id="about">
             <h1 id="section-title">About</h1>
+            <div id="about-socials-flex">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/austinplambeck/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/austinplambeck" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="mailto:austinplambeck@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/plamboworld" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/plamboworld/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
             <div id="about-flex">
                 <div id="me">
                     <h3 id="about-title">Me</h3>
@@ -239,19 +250,46 @@
             </div>
         </section>
         <div class="explore-more">
-            <a href="#now-section"><button id="seemore-btn">See what I'm doing now</button></a>
-            <a href="#now-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            <a href="#now"><button id="seemore-btn">See what I'm doing now</button></a>
+            <a href="#now" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
-        <section id="now-section">
-
+        <section id="now">
+            <h1 id="section-title">Now</h1>
+            <h3 id="now-subheading">what i'm doing <a href="https://nownownow.com/about" target="_blank">now</a></h3>
+            <h4>October '22 Update</h4>
+            <h5>The Front-end Journey <span>💻</span></h5>
+            <ul>
+                <li>Updated this portfolio for the 3rd time. I watched a few <a href="https://youtu.be/9eMp8l4WEpE">videos from Scrimba</a> and did a lot of research on other developers’ portfolios to get a good feel for what I need on here. I think it turned out good!</li>
+                <li>Learning more React. Going through tutorial projects on YouTube.</li>
+                <li>Writing and coding the story for <em>Of the Sky: The Game</em>. It's very difficult.</li>
+            </ul>
+            <h5>Writing <span>🖊️</span></h5>
+            <ul>
+                <li>Slowly writing a novella titled <em>Of the Sky</em> (takes place in the same world as the game I'm making).</li>
+            </ul>
+            <h5>Media <span>🎨</span></h5>
+            <ul>
+                <li><span>📽️</span> <em>Haru</em> (1996), <em>The Social Network</em> (2012), <em>Steve Jobs</em> (2015)</li>
+                <li><span>📺</span> <em>House of the Dragon</em> & BBC's <em>Dracula</em> miniseries</li>
+                <li><span>📚</span> <em>Star Wars: Visions: Ronin</em> by Emma Mieko Candon</li>
+                <li><span>🎶</span> <a href="https://open.spotify.com/playlist/3vLuXMfcTF20pXUDLuD2th?si=d871199ee1ca4166" target="_blank">Act III (2022)</a></li>
+            </ul>
+            <h5>Life <span>🌥️</span></h5>
+            <ul>
+                <li>Going on two years with my Simoney</li>
+                <li>Still working at a movie theatre</li>
+                <li>Impatiently waiting for fall/winter weather</li>
+                <li>Starting work at a temporary Data Entry job</li>
+            </ul>
         </section>
         <footer>
             <h5><i class="fa-regular fa-copyright"></i> Austin Plambeck 2022</h5>
             <ul>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/austinplambeck/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/austinplambeck" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:austinplambeck@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://twitter.com/plamboworld" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/plamboworld/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             <h5 id="up-arrow" onclick="scrollUp()"><i class="fa-solid fa-circle-up"></i></h5>
         </footer>
