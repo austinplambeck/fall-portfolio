@@ -40,14 +40,15 @@ function pausePlay() {
 let darkMode = localStorage.getItem('darkMode'); 
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
+const darkLightSwitch = document.getElementById('dark-light-switch');
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
-  // 3. Change icon to moon
-  
+  // 3. Change icon to dark
+  darkLightSwitch.innerHTML = '<i class="fa-solid fa-moon" id="dark-mode-toggle" onclick="switchMode()"></i><span class="tooltiptext4">Change theme</span>';  
 }
 
 const disableDarkMode = () => {
@@ -55,6 +56,8 @@ const disableDarkMode = () => {
   document.body.classList.remove('darkmode');
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
+  // 3. Change icon to light
+  darkLightSwitch.innerHTML = '<i class="fa-regular fa-sun" id="dark-mode-toggle" onclick="switchMode()"></i><span class="tooltiptext4">Change theme</span>';
 }
  
 // If the user already visited and enabled darkMode
@@ -64,7 +67,7 @@ if (darkMode === 'enabled') {
 }
 
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
+switchMode = () => {
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode'); 
   
@@ -75,4 +78,4 @@ darkModeToggle.addEventListener('click', () => {
   } else {  
     disableDarkMode(); 
   }
-});
+};

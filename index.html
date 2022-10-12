@@ -34,14 +34,14 @@
                         <a href="#" id="volume-button" onclick="pausePlay()"><li><i class="fa-sharp fa-solid fa-volume-high"></i></li></a>
                         <span class="tooltiptext3">Toggle sound</span>
                     </div>
-                    <div class="tooltip">
-                        <i class="fa-regular fa-sun" id="dark-mode-toggle"></i>
+                    <div class="tooltip" id="dark-light-switch">
+                        <i class="fa-regular fa-sun" id="dark-mode-toggle" onclick="switchMode()"></i>
                         <span class="tooltiptext4">Change theme</span>
                     </div>
                     <a href="#projects-section" id="header-button"><li>Projects</li></a>
                     <a href="#about-section" id="header-button"><li>About</li></a>
-                    <a href="#" id="header-button"><li>Now</li></a>
-                    <a href="#" id="header-button"><li>Resume</li></a>
+                    <a href="#now-section" id="header-button"><li>Now</li></a>
+                    <a href="./media/AustinPlambeck_DevResume.pdf" id="header-button" target="_blank"><li>Resume</li></a>
                 </ul>
             </div>
         </header>
@@ -179,16 +179,16 @@
                     <p>
                         Hello! My name is Austin Plambeck, and I’m a front-end developer 
                         and sci-fi / fantasy writer. As a developer, my aim is to build 
-                        useful projects and apps that are well-designed (aesthetically 
-                        & functionally) and contain clean code. My goal is to find work at 
-                        a company where I can utilize my skillset and learn more every day. As a writer, I look 
+                        projects that are well-designed (aesthetically 
+                        & functionally) and contain clean code. I am open to work 
+                        and eager to utilize my skillset and continue learning. As a writer, I look 
                         to create deeply flawed characters and messy plotlines with an 
                         overarching hopeful message. My debut fantasy novel 
                        TOMORROW’S STORM is <a id="me-link" href="https://toscreative.com/tomorrows-storm" target="_blank">available now</a>!
                     </p>
                     <div id="me-buttons">
                         <a href="mailto:austinplambeck@gmail.com"><button>Get in touch with me 📫</button></a>
-                        <a href="#"><button>View my resume 📑</button></a>
+                        <a href="./media/AustinPlambeck_DevResume.pdf" target="_blank"><button>View my resume 📑</button></a>
                     </div>
                 </div>
                 <div id="skills">
@@ -242,8 +242,9 @@
             <a href="#now-section"><button id="seemore-btn">See what I'm doing now</button></a>
             <a href="#now-section" id="seemore-arrow"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
         </div>
-        <section id="now-section"></section>
+        <section id="now-section">
 
+        </section>
         <footer>
             <h5><i class="fa-regular fa-copyright"></i> Austin Plambeck 2022</h5>
             <ul>

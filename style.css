@@ -128,6 +128,11 @@ header ul {
     font-size: 1.5rem;
     padding: 0.2rem 0.5rem 0rem 0.5rem;
     margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    color: var(--btn-color);
 }
 
 #header-button {
@@ -658,7 +663,7 @@ footer li a:hover {
     
     .header-format {
         display: grid;
-        grid-template-columns: 1fr 12fr;
+        grid-template-columns: 1fr 9fr;
     }
     
     .header-logo {
@@ -681,7 +686,7 @@ footer li a:hover {
       
     #volume-button {
         font-size: 1.1rem;
-        padding: 0.2rem 0.5rem 0rem 0.5rem;
+        padding: 0.2rem 0.5rem 0.25rem 0.5rem;
         margin-right: 0.3rem;
     }
 
