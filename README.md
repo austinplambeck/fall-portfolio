@@ -13,9 +13,9 @@
 
 ### Photos:
 
-![Desktop Light Mode](../media/portfolio1.jpg)
+![Desktop Light Mode](./media/portfolio1.jpg)
 
-![Desktop Dark Mode](../media/portfolio2.jpg)
+![Desktop Dark Mode](./media/portfolio2.jpg)
 
 ### Contact:
 
