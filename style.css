@@ -808,6 +808,10 @@ footer li a:hover {
         font-size: 1.7rem;
     }
 
+    #section-title {
+        font-size: 3.5rem;
+    }
+
     #p-box {
         min-width: 350px;
         margin-bottom: 4vh;
@@ -848,4 +852,30 @@ footer li a:hover {
         min-width: 350px;
     }
 
+    #now-subheading {
+        font-size: 1.8rem;
+    }
+
+    #now h4 {
+        font-size: 1.4rem;
+    }
+
+    #now h5 {
+        font-size: 1.2rem;
+    }
+
+    #now ul {
+        padding-left: 1.15rem;
+    }
+
+    #now li {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px)  {
+    #p-box {
+        height: 34rem;
+    }
 }
